@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>floor3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-11-r">
+        <li class="text">1.1 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-12-r">
+        <li class="text">1.2 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-13-r">
+        <li class="text">1.3 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-14-r">
+        <li class="text">1.4 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-center-1-15">
+        <li class="text">Center 1 (1.5)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-16-r">
+        <li class="text">1.6 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-17-r">
+        <li class="text">1.7 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-18-r">
+        <li class="text">1.8 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-181-r">
+        <li class="text">1.8.1 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-19-r">
+        <li class="text">1.9 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10--">
+        <li class="text">قاعة الباحثون</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-110-r">
+        <li class="text">1.10 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12--">
+        <li class="text">قاعة المبدعون</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-111-r">
+        <li class="text">1.11 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14--">
+        <li class="text">قاعة المعرفة</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-112-r">
+        <li class="text">1.12 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-21-r">
+        <li class="text">2.1 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-22-r">
+        <li class="text">2.2 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-23-r">
+        <li class="text">2.3 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-24-r">
+        <li class="text">2.4 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-25-r">
+        <li class="text">2.5 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-31-r">
+        <li class="text">3.1 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-32-r">
+        <li class="text">3.2 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-33-r">
+        <li class="text">3.3 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-34-r">
+        <li class="text">3.4 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-35-r">
+        <li class="text">3.5 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-41-r">
+        <li class="text">4.1 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-42-r">
+        <li class="text">4.2 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-43-r">
+        <li class="text">4.3 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-44-r">
+        <li class="text">4.4 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-45-r">
+        <li class="text">4.5 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-46-r">
+        <li class="text">4.6 R</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-11-l">
+        <li class="text">1.1 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-12-l">
+        <li class="text">1.2 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-13-l">
+        <li class="text">1.3 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-14-l">
+        <li class="text">1.4 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-15-l">
+        <li class="text">1.5 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-center-2-113">
+        <li class="text">Center 2 (1.13)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-19-l">
+        <li class="text">1.9 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39---">
+        <li class="text">قاعة سمو الفكر</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-110-l">
+        <li class="text">1.10 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-111-l">
+        <li class="text">1.11 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-112-l">
+        <li class="text">1.12 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-16-l">
+        <li class="text">1.6 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-17-l">
+        <li class="text">1.7 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-18-l">
+        <li class="text">1.8 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-21-l">
+        <li class="text">2.1 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-22-l">
+        <li class="text">2.2 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-23-l">
+        <li class="text">2.3 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-24-l">
+        <li class="text">2.4 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-31-l">
+        <li class="text">3.1 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-32-l">
+        <li class="text">3.2 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-33-l">
+        <li class="text">3.3 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-34-l">
+        <li class="text">3.4 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-41-l">
+        <li class="text">4.1 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-42-l">
+        <li class="text">4.2 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-43-l">
+        <li class="text">4.3 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-44-l">
+        <li class="text">4.4 L</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-45-l">
+        <li class="text">4.5 L</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

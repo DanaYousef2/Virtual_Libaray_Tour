@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>الجولةالإفتراضية للمكتبة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="sidebar ">
+    <h2>اختار الدور</h2>
+    <button class="floor-button" onclick="loadTour('bedroom/app-files/index.html')">البدروم</button>
+    <button class="floor-button" onclick="loadTour('floor1/app-files/index.html')">الدور الأول</button>
+    <button class="floor-button" onclick="loadTour('floor2/app-files/index.html')">الدور الثاني</button>
+    <button class="floor-button" onclick="loadTour('floor3/app-files/index.html')">الدور الثالث</button>
+    <button class="floor-button" onclick="loadTour('floor4/app-files/index.html')">الدور الرابع</button>
+    <button class="floor-button" onclick="loadTour('floor5/app-files/index.html')">الدور الخامس</button>
+
+  </div>
+
+  <div class="main ">
+    <h1 id="floorTitle">الجولةالإفتراضية للمكتبة</h1>
+    <div class="viewer">
+      <iframe id="tourFrame" src=""></iframe>
+    </div>
+  </div>
+
+  <script>
+    function loadTour(path) {
+      const titleMap = {
+        'bedroom/app-files/index.html': 'البدروم',
+        'floor1/app-files/index.html': 'الدور الأول',
+        'floor2/app-files/index.html': 'الدور الثاني',
+        'floor3/app-files/index.html': 'الدور الثالث',
+        'floor4/app-files/index.html': 'الدور الرابع',
+        'floor5/app-files/index.html': 'الدور الخامس'
+      };
+      document.getElementById('tourFrame').src = path;
+      document.getElementById('floorTitle').innerText = titleMap[path] || 'جولة المكتبة';
+    }
+  </script>
+</body>
+
+</html>
